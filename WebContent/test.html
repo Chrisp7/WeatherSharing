@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+	
+	$("#getWeather").click(function() {
+		alert("hello");
+			$.post("http://apix.sinaapp.com/weather", {
+				appkey:1,
+				city : "南京"
+			}, function(data) {
+
+				for (var i = 0; i < data.length; i++) {
+					alert(data[i]);
+
+				}
+			}, "json");
+		});
+});
+	
+</script>
+</head>
+<body>
+	<input type="button" id="getWeather" value="获取天气" />
+</body>
+</html>

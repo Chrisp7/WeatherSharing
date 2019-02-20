@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WeatherSharing 一起来分享天气吧~</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+	<div id="hidearea">
+		<div id="mask"></div>
+		<div id="form" class="login-form">
+			<form method="post" action="login.do">
+				<ul>
+					<li class="item"><input type="button" class="cancel"></li>
+					<li class="item" style="font-size:20px; color:#fff; text-align:left; margin-top:10px;">&nbsp;&nbsp;用户登录</li>
+					<li class="item"><input type="text" name="username" class="intype" placeholder="用户名"></li>
+					<li class="item"><input type="password" name="passwd" class="intype" placeholder="密码"></li>
+					<li class="item"></li>
+					<li class="item"><input type="submit" class="uv_button" value="登录" style="height=40px;"></li>
+				</ul>
+			</form>
+		</div>
+		
+	</div>
+	<div id="container">	
+		<div id="nav">
+			<div class="mainmenu">
+				<div class="pic"><img src="pic/logo.png"></div>
+				<ul class="right_menu">
+					<li class="channel"><a href="#">首页</a></li>
+					<li class="channel"><a href="#">周围</a></li>
+					<li class="channel"><a href="#">占位</a></li>
+					<li class="channel"><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="object-1">
+				<div class="laymid">
+					<div class="logo"></div>
+					<div class="click-me">
+						<button class="uv_button" id="login">登录</button>
+						<button class="uv_button register" id="register"><a href="register.html" style="padding:5px 65px;">注册</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="object-2">
+				<div class="innerimg1" id="innerimg1">
+					<img src="pic/38.png">
+				</div>
+			</div>
+			<div class="object-3">
+				<div class="innerimg2" id="innerimg2">
+					<img src="pic/harvest.png">
+				</div>
+			</div>
+			<div class="object-4">
+				<div class="innerimg3" id="innerimg3">
+					<img src="pic/extreme.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

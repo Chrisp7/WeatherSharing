@@ -1,0 +1,286 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #E9E9E9;
+}
+body{
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+}
+a{
+	text-decoration:none; 
+	color: #000;
+}
+li{list-style:none;}
+#nav{
+	min-width: 1017px;
+	width: 100%;
+	height: 50px;
+	background: #48525E;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 100;
+}
+#nav .channel{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 20px;
+}
+
+
+#nav .channel img{
+	width: 70px;
+	margin-left: 20px;
+}
+#nav a{
+	padding:30px 30px;
+	color:#fff;
+}
+
+#nav .channel_right{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+#nav .channel_right .login_show{
+	font-size:14px;
+	line-height:50px;
+	color:#fff;
+	
+}
+#container{
+	width: 1170px;
+	height: 1000px;
+	margin: 0px auto;
+	position:relative;
+
+}
+#container #launch{
+	position:relative;
+	z-index:100;
+
+}
+#launch span{
+	position:fixed;
+	bottom:60px;
+	right:0;
+	color:red;
+}
+#launch .lau_btn{
+	position:fixed;
+	z-index:100;
+	width:50px;
+	height:50px;
+	bottom:0;
+	right:5px;
+	background:url(../pic/add.png);
+	background-size:100% 100%;
+	
+}
+#container #show_pannel{
+	margin-top: 59px;
+	width: 100%;
+	height: 250px;
+	background: #FFFFFF;
+	
+}
+#show_pannel .personal{
+	width: 275px;
+	height: 210px;
+	margin: 15px 20px;
+	margin-left: 30px;
+	margin-top: 25px;
+	float: left;
+	font-size: 24px;
+	border-right: solid 1px #ddd;
+}
+#show_pannel .personal .personal-pic{
+	margin-top: 10px;
+	width: 150px;
+	height: 175px;
+	float: left;
+
+
+}
+#show_pannel .personal .info{
+	margin-top: 15px;
+	width: 125px;
+	height: 175px;
+	float: left;
+
+}
+
+#show_pannel .personal .info .info-li{
+	font-size: 18px;
+	margin: 10px;
+
+}
+
+#show_pannel #chart{
+	width: 550px;
+	height: 210px;
+	margin:20px 20px;
+	margin-left: 10px;
+	float: left;
+	background: #efefef;
+}
+#chart path{
+	fill:none;
+	stroke:steelblue;
+	stroke-width:2;
+}
+
+.domain,.tick line{
+	stroke:grey;
+	
+}
+#show_pannel #suggestion{
+	float: left;
+	width: 242px;
+	height: 190px;
+	padding: 20px 15px 20px 5px;
+}
+
+#main{
+	margin-top: 10px;
+	width: 900px;
+	background: #fff;
+	float: left;
+	position: relative;
+}
+#main .mod-head{
+	width: 100%;
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+
+}
+#main .head-li{
+	width: 448px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+}
+#main .head-li .head-btn{
+	width: 100%;
+	height: 100%;
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	border: none;
+	background: #fff;
+	letter-spacing: 1px;
+}
+
+
+#main .general{
+	margin: 0px auto;
+	width: 819px;
+	position: relative;
+	
+}
+#history{
+	display:none;
+	height: auto;
+
+}
+#local{
+	display:block;
+	height: auto;
+}
+.pic-item{
+	width: 253px;
+	height: 283px;
+	float: left;
+	margin: 10px;
+
+}
+
+.time-pic-item-a{
+	width: 253px;
+	height: 253px;
+}
+.bad{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 20px;
+	background: url(../pic/bad.png);
+	background-size: 100% 100%;
+	border:none;
+}
+.good{
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-right: 20px;
+	background: url(../pic/good.png);
+	background-size: 100% 100%;
+	border:none;
+}
+.good:hover{
+	cursor: pointer;
+}
+.bad:hover{
+	cursor: pointer;
+}
+#main-footer{
+	width: 100%;
+	height: 50px;
+	color:#ff6500;
+	text-align:center;
+	font-size:0;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+
+	
+}
+#main-footer a,.page-current,.page-prev{
+	padding:5px 7px;
+	font-size:14px;
+	margin-left:10px;
+}
+#main-footer a{
+	border:1px solid #ff9600;
+	color:#ff6500;
+	text-decoration:none;
+
+}
+#main-footer a:hover{
+	border:1px solid #ff6500;
+	background:#ffbe94;
+}
+
+#main-footer .page-current{
+	border:1px solid #ff6500;
+	color:#ff6500;
+	background:#ffbe94;
+	
+}
+#main-footer .page-prev{
+	border:1px solid #ffe3c6;
+	color:#ffe346;
+
+
+}
+#focus-district{
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 255px;
+	background: #fff;
+	float: left;
+	font-size: 20px;
+}
+.detail-city{
+	margin: 20px 20px;
+}
+.focus-city-item{
+	padding: 10px;
+	width: 100%;
+	height: 38px;
+}

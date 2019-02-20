@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cityselect.js"></script>
+<link rel="stylesheet" type="text/css" href="css/upload.css">
+<script type="text/javascript">
+	$(function() {
+		$("#city").citySelect({
+			url : "js/city.min.js",
+			prov : "北京", //省份  
+			city : "东城区", //城市    
+			nodata : "none" //当子集无数据时，隐藏select  
+		});
+	});
+	function show() {
+		var mydate = new Date();
+		var str = "" + mydate.getFullYear() + "-";
+		str += (mydate.getMonth() + 1) + "-";
+		str += mydate.getDate() + "-";
+		str += mydate.getHours() + ":";
+		str += mydate.getMinutes() + ":";
+		str += mydate.getSeconds();
+		return str;
+	}
+
+	$(document).ready(function($) {
+
+		var current_time = show();
+		$("input[name='current_time']").attr("value", current_time);
+	});
+</script>
+</head>
+<body>
+	<div id="container">
+		<form id="inner-container" action="upload.do" method="post"
+			enctype="multipart/form-data">
+			<h1 style="width: 78%; margin-bottom: 20px;">上传照片:</h1>
+			<ul>
+				<li class="item"><span class="sp">选择照片:</span> <input
+					type="file" name="photo" class="in-class"></li>
+				<li class="item"><span class="sp">拍摄时间:</span> <input
+					type="text" name="current_time" class="in-class"></li>
+				<li class="item"><span class="sp">拍摄地点:</span>
+					<div id="city">
+						<select class="prov" name="province"></select> 
+						<select class="city" disabled="disabled" name="city"></select>
+					</div></li>
+				<li class="item"><span class="sp">照片描述:</span> <input
+					type="text" name="description" class="in-class"></li>
+				<li class="item"><input type="submit" class="uv-button"
+					value="确认提交" /></li>
+			</ul>
+		</form>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	overflow: hidden;
+}
+a{
+	text-decoration:none; 
+	color: #000;
+}
+li{list-style:none;}
+#hidearea{
+	display: none;
+	z-index: 101;
+	width: 100%;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+}
+#hidearea #mask{
+	width: 100%;
+	display: none;
+	background: #000;
+	z-index: 102;
+	opacity: 0.5;
+
+}
+#hidearea #form{
+
+	text-align: center;
+	width: 237px;
+	height: 293px;
+	display: none;
+	background: rgba(0,0,0,0.5);
+	z-index: 103;
+	position: absolute;
+	left: 43%;
+	top: 30%;
+
+}
+#hidearea #form .cancel{
+	width: 35px;
+	height: 35px;
+	background:url(../pic/cancel.png);
+	background-size: 100% 100%;
+	float: right;
+	border:none;
+	margin-right: 5px;
+
+}
+#hidearea #form .item{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	
+}
+#hidearea #form .item .intype{
+	width: 159px;
+	height: 20px;
+	padding: 9px 9px;
+	border: 1px solid #000;
+
+}
+
+
+#container{
+	width: 100%;
+
+}
+#nav{
+
+	min-width: 1017px;
+	width: 100%;
+	height: 80px;
+	background: #FCFCFC;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 100;
+}
+#nav .mainmenu{
+	margin: 0px auto;
+	width: 80%;
+}
+#nav .pic{
+	width: 170px;
+	height: 100%;
+	float: left;
+}
+#nav .pic img{
+	width: 100%;
+	height: 100%;
+
+}
+#nav .right_menu{
+	margin-left: 400px;
+}
+#nav .right_menu .channel{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+#nav .right_menu .channel a{
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	padding: 30px 30px;
+}
+#main{
+	width: 100%;
+
+}
+#main .object-1{
+	background: url(../pic/spring.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#main .object-1 .laymid{
+	display: block;
+	width: 420px;
+	height: 200px;
+	position: absolute;
+	left: 35%;
+	top: 40%;
+	
+}
+#main .object-1 .laymid .logo{
+	width: 100%;
+	height: 90px;
+	margin-bottom: 10px;
+	background: url(../pic/share.png);
+	background-size: 100% 100%;
+
+}
+#main .object-1 .laymid .click-me{
+	text-align: center;
+	width: 100%;
+	height: 30px;
+}
+ .uv_button{
+	font-size: 16px;
+	letter-spacing: 10px;
+	color: #fff;
+	border-radius: 2px;
+	border:1px solid #CD6409;
+	width: 186px;
+	height: 30px;
+	background: #CD6409;
+}
+.click-me .register{
+	border-color: #fff;
+	background: rgba(0,0,0,0);
+	margin-left: 10px;
+}
+#main .object-2{
+	background: url(../pic/summer.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.object-2 .innerimg1{
+	display: block;
+	width: 480px;
+	height: 90px;
+	position: absolute;
+	right: 0%;
+	bottom: 5%;
+	opacity: 0;
+}
+#main .object-3{
+	background: url(../pic/autumn.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.innerimg2{
+	display: block;
+	width: 480px;
+	height: 90px;
+	position: absolute;
+	right: 33%;
+	bottom: 35%;
+	opacity: 0;
+}
+#main .object-4{
+	background: url(../pic/winter.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.innerimg3{
+	display: block;
+	width: 480px;
+	height: 90px;
+	position: absolute;
+	left: 3%;
+	bottom: 5%;
+	opacity: 0;
+}
